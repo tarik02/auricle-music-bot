@@ -7,7 +7,7 @@ import {
 } from "@discord-player/extractor";
 import { Listener } from "@sapphire/framework";
 import { SpotifyExtractor } from "discord-player-spotify";
-import { YoutubeiExtractor } from "discord-player-youtubei";
+import { YoutubeSabrExtractor } from "discord-player-googlevideo";
 
 export class UserEvent extends Listener {
   public constructor(
@@ -26,7 +26,7 @@ export class UserEvent extends Listener {
       AttachmentExtractor,
       ReverbnationExtractor,
       AppleMusicExtractor,
-      YoutubeiExtractor,
+      YoutubeSabrExtractor,
       VimeoExtractor,
     ]);
     await this.container.client.player.extractors.register(SpotifyExtractor, {
